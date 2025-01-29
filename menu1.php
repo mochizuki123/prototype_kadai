@@ -5,10 +5,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/style.css">
-    
-    <style>
+     
+ 
   <style>
-    .selection {
+
+  .selection {
       /* text-align: center; */
       margin-left: 150px;
       font-family: Arial, sans-serif;
@@ -64,26 +65,62 @@
     font-size: 24px;
           /* 文字サイズを調整 */
           position: absolute; 
-          /* margin-top: 10%; */
+          margin-top: 10%;
           left: 30%;
           /* transform: translate(-50%, -50%); */
               /* 中央に配置 */
   }
-  .comment{
-     /* display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; */
-    
-    margin-top:100px;
-    margin-left: 100px;
-    font-size: 15px; 
-  }
+.comment{
+    /* display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh; */
+  
+  margin-top:100px;
+  margin-left: 100px;
+  font-size: 15px; 
+}
 
+.nav.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+/* .navbar-nav li {
+            display: inline-block;
+            margin-right: 15px; */
+        
+.navbar-nav li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            color: grey;
+}
+.navbar-nav li a:hover {
+    background-color: #ddd;
+} 
 
 </style>
 </head>  
   <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" >
+              <img src="img/logo.png" alt="Logo" style="width:40px;">
+            </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="index.php">Menu</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="logout.php">Log out</a></li>
+            
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> ログイン</a></li>
+        </ul>
+    </div>
+</nav>
   
   <div class="selection">
     <p class="selection">スピーチをしたいテーマを選ぶ</p>
@@ -317,7 +354,7 @@
                     <label for="image">画像：</label>
                     <input type="file" name="image" id="image">    
                 </div> -->
-
+                
                 <div>
                     <input type="submit" value="送信">
                 </div>
@@ -327,3 +364,4 @@
 
   </body>
 </html>
+＃Add: えーとカウンター、生成テキスト→DB登録、
